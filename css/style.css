@@ -1,0 +1,116 @@
+/*global setting*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+/*start container*/
+.container{
+    padding: 30px;
+    margin: 30px auto;
+}
+.container label{
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.container input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #999;
+    font-size: 20px;
+    height: 35px;
+    margin-bottom: 5px;
+}
+.container .added{
+    background-color: #06df06;
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: none;
+}
+.container .added.bo{
+    display: block;
+}
+.container .book-title,
+.container .author,
+.container .number{
+    display: grid;
+}
+.container .submit{
+    background-color: #efebeb;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid;
+    text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.container .submit:hover{
+    background-color: #06df06;
+    color: #fff;
+}
+.container .book-Add{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.container .book-Add span{
+    width: calc(100%/3);
+    font-size: 25px;
+    font-weight: bold;
+}
+/*start parentElement with javascript*/
+.container .your-Favorite-book .Favorite-book{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    margin: 10px 0px;
+    padding: 5px;
+}
+.container .your-Favorite-book .Favorite-book div{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    width: calc(100% / 3);
+    word-break: break-all;
+}
+.container .your-Favorite-book .Favorite-book i{
+    cursor: pointer;
+    font-size: 20px;
+    transition: .6s;
+    margin-right: 10px;
+}
+.container .your-Favorite-book .Favorite-book i:hover{
+    transform: rotate(360deg);
+}
+.container .your-Favorite-book .remove-All{
+    height: 30px;
+    padding: 5px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .6s;
+}
+.container .your-Favorite-book .remove-All:hover{
+    background-color: black;
+    color: #fff;
+}
+/*end parentElement with javascript*/
+
+/*end container*/

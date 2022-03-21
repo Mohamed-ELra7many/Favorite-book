@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">    <!-- file fontawesome-->
+    <link rel="stylesheet" href="css/style.css">      <!-- file css-->
+    <title>Favorite book</title>
+</head>
+<body>
+    <!--start container-->
+    <div class="container">
+        <h1>Add Book</h1>
+        <div class="added">book added</div>
+        <div class="book-title">
+            <label>Book Title</label>
+            <input type="text" id="book-title">
+        </div>
+        <div class="author">
+            <label>Author</label>
+            <input type="text" id="book-author">
+        </div>
+        <div class="number">
+            <label>ISBN</label>
+            <input type="number" id="book-Isbn">
+        </div>
+        <button class="submit">SUBMIT</button>
+        <div class="book-Add">
+            <span>Title</span>
+            <span>Author</span>
+            <span>ISBN</span>
+        </div>
+        <!--start parentElement with javascript-->
+        <div class="your-Favorite-book">
+            <button class="remove-All">CLEAR ALL BOOKS</button>
+        </div>
+        <!--end parentElement with javascript-->
+    </div>
+    <!--end container-->
+    <script src="main.js"></script>
+</body>
+</html>
